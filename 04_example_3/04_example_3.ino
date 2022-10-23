@@ -18,5 +18,10 @@ void loop() {
   delay(1000); // wait for 1000 milliseconds
 }
 int toggle_state(int toggle){
+  if (toggle ==0){
+    toggle = 1;
+  }else if(toggle == 1){
+    toggle = 0;
+  }
   return toggle;
 }
