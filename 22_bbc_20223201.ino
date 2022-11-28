@@ -8,18 +8,18 @@
 
 // Event interval parameters
 #define _INTERVAL_DIST    20 // distance sensor interval (unit: ms)
-#define _INTERVAL_SERVO   80 // servo interval (unit: ms)
+#define _INTERVAL_SERVO   20 // servo interval (unit: ms)
 #define _INTERVAL_SERIAL  20 // serial interval (unit: ms)
 
 // EMA filter configuration for the IR distance sensor
-#define _EMA_ALPHA 0.3    // EMA weight (range: 0 to 1)
+#define _EMA_ALPHA 0.5    // EMA weight (range: 0 to 1)
                           // Setting _EMA_ALPHA to 0 effectively disables EMA filter.
 
 // Servo adjustment
-#define _DUTY_MAX 1600  // Servo angle: D degree
+#define _DUTY_MAX 1550  // Servo angle: D degree
 #define _DUTY_NEU 1480  // Servo angle: 0 degree
-#define _DUTY_MIN 820   // Servo angle: E degree
-#define _SERVO_ANGLE_DIFF 20 // Replace with |D - E| degree
+#define _DUTY_MIN 650   // Servo angle: E degree
+#define _SERVO_ANGLE_DIFF 10 // Replace with |D - E| degree
 #define _SERVO_SPEED 1000 // servo speed limit (unit: degree/second)
 
 #define _BANGBANG_RANGE 120 //Rail Slope Operation Volume
